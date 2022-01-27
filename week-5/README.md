@@ -22,5 +22,5 @@
 五
 
 ![image](https://github.com/alice1315/wehelp-assignments/blob/master/week-5/images/五-1.png)
-![image](https://github.com/alice1315/wehelp-assignments/blob/master/week-5/images/五-3.png)
+![image](https://github.com/alice1315/wehelp-assignments/blob/master/week-5/images/五-2.png)
 ![image](https://github.com/alice1315/wehelp-assignments/blob/master/week-5/images/五-3.png)
