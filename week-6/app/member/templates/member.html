@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>會員頁面</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}"/>
+    </head>
+
+    <body>
+        <div class="header">歡迎光臨，這是會員頁</div>
+        <div class="content">
+            <div class="title">{{name}}，歡迎登入系統</div>
+            <form action="/signout">
+                <button class="btn">登出系統</button>
+            </form>
+        </div>
+    </body>
+</html>
