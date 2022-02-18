@@ -1,4 +1,3 @@
-from sqlite3 import Cursor
 from flask import render_template
 
 from flask import request
