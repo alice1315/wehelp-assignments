@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>首頁</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}" />
+</head>
+<body>
+    <div class="header">歡迎光臨，請註冊登入系統</div>
+    <div class="content">
+        <form action="/signup" method="POST">
+            <div class="title">註冊帳號</div>
+            <div class="input">姓名<input type="text" name="name"/></div>
+            <div class="input">帳號<input type="text" name="username"/></div>
+            <div class="input">密碼<input type="password" name="password"/></div>
+            <button class="btn">註冊</button>
+        </form>
+
+    <hr />
+
+        <form action="/signin" method="POST">
+            <div class="title">登入系統</div>
+            <div class="input">帳號<input type="text" name="username"/></div>
+            <div class="input">密碼<input type="password" name="password"/></div>
+            <button class="btn">登入</button>
+        </form>
+    </div>
+</body>
+</html>

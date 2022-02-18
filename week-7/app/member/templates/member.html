@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>會員頁面</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}"/>
+    </head>
+
+    <body>
+        <div class="header">歡迎光臨，這是會員頁</div>
+        <div class="content">
+            <div class="title">{{name}}，歡迎登入系統</div>
+            <form action="/signout" method="GET">
+                <button class="btn">登出系統</button>
+            </form>
+
+            <hr />
+
+            <form onsubmit="return searchUser();">
+                <div class="title">查詢會員姓名</div>
+                <input type="text" id="search-box"/>
+                <button class="btn" type="submit">查詢</button>
+                <div id="show-member"></div>
+            </form>
+
+            <hr />
+
+            <form onsubmit="return updateUser();">
+                <div class="title">更新我的姓名</div>
+                <input type="text" id="update-box" />
+                <button class="btn" type="submit">更新</button>
+                <div id="show-status"></div>
+            </form>
+        </div>
+
+        <script src="{{url_for('static', filename='js/member.js')}}"></script>
+    </body>
+</html>
